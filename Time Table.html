@@ -5,22 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        pre {
+            font-size: 30px;
+
+            padding: 10px;
+            margin-left: 510px;
+            margin-right: 510px;
+            text-align: center;
+            font-family: algerian;
+        }
+
+        table {
+            background-color: rgb(59, 56, 56);
+            border-collapse: collapse;
+            padding: 10px;
+            width: 100%;
+         
+            caption {
+                font-size: 40px;
+                font-family: algerian;
+                color: cyan;
+            }
+
+            th {
+                color: cyan;
+            }
+
+            td {
+                color: rgb(103, 231, 137);
+            }
+
+            tr:hover {
+                background-color: #869719;
+            }
+        }
+
+        #prehead {
+            margin: 0px;
+            padding: 50px;
+            font-size: xx-large;
+            font-style: inherit;
+            font-family: algerian;
+            background-color: darkturquoise;
+           
+        }
+
+        #hi {
+            font-size: 30px;
+            background-color: darkturquoise;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(255, 0, 0);
+            padding: 50px;
+        }
+        body{
+            background-color: rgb(59, 56, 56);
+            margin: 0px;
+        }
+        div{
+            background-color: honeydew;
+            margin: 0px;
+        }
+        pre{
+            text-align: center;
+        }
+        
+        
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Computer Science and Engineering Department</h1>
-        <pre>
+    <header align="center">
+        <div>
+          <a href="https://www.svnit.ac.in/" ><img src="Svnit.png" alt="SVNIT" width="200"></a>
+        </div>
+        <h1 id="prehead">Computer Science and Engineering Department</h1>
+        <pre style="color: cyan;">
             Semester:Even                                       Class:B.Tech(DivF)
             Year:2024-25                                        Classroom:COED 306
         </pre>
     </header>
-    <main>
-        <table border="1">
+    <main align="center">
+        <table border="1" align="center">
             <caption>TIME TABLE</caption>
             <thead>
                 <tr>
-                    <th width="100">Day</th>
+                    <th rowspan="2" width="100">Day</th>
                     <th>1</th>
                     <th>2</th>
                     <th>3</th>
@@ -31,15 +106,14 @@
                     <th>8</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td>8:30 to 9:20 </td>
-                    <td>9:30 to 10:20</td>
-                    <td>10:30 to 11:20</td>
-                    <td>11:30 to 12:20</td>
-                    <td>2:00 to 2:50</td>
-                    <td>3:00 to 3:50</td>
-                    <td>4:00 to 4:50</td>
-                    <td>5:00 to 5:50</td>
+                    <th>8:30 to 9:20 </th>
+                    <th>9:30 to 10:20</td>
+                    <th>10:30 to 11:20</th>
+                    <th>11:30 to 12:20</th>
+                    <th>2:00 to 2:50</th>
+                    <th>3:00 to 3:50</th>
+                    <th>4:00 to 4:50</th>
+                    <th>5:00 to 5:50</th>
                 </tr>
             </thead>
             <tbody align="center">
@@ -144,13 +218,12 @@
         <br>
         <br>
         <br>
-        <hr>
     </main>
     <footer>
         <br>
         <br>
         <br>
-        <table border="1">
+        <table border="1" align="center">
             <thead>
                 <tr>
                     <th>SL NO</th>
@@ -318,6 +391,7 @@
                 </tr>
             </tbody>
         </table>
+        <p id="hi" align="center"><b>&copy; 2025 Time table| All rights Reserved</b></p>
     </footer>
 </body>
 
